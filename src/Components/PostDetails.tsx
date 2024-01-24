@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Typography, Paper, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -18,7 +18,6 @@ interface PostDetailsProps {
 class PostDetails extends Component<PostDetailsProps> {
   render() {
     const { post } = this.props;
-
     if (!post) {
       return <Typography variant="h6">No post selected.</Typography>;
     }
@@ -29,7 +28,17 @@ class PostDetails extends Component<PostDetailsProps> {
         <Typography variant="body1">
           URL: <a href={post.url}> {post.url} </a>
         </Typography>
-        <Typography variant="body1">Created At: {post.created_at}</Typography>
+        <Typography variant="body1">
+          Created At:{" "}
+          {new Date(post.created_at).toLocaleString("en-GB", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+            hour: "numeric",
+            minute: "numeric",
+            timeZone: "UTC",
+          })}
+        </Typography>{" "}
         <Typography variant="body1">Tags: {post._tags.join(", ")}</Typography>
         <Typography variant="body1">Author: {post.author}</Typography>
         <Button
@@ -47,3 +56,10 @@ class PostDetails extends Component<PostDetailsProps> {
 }
 
 export default PostDetails;
+
+// git init
+// git add .
+// git commit -m "first commit"
+// git branch -M main
+// git remote add origin https://github.com/Sachin-201/infinitescroll.git
+// git push -u origin main

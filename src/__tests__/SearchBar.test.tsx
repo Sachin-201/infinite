@@ -1,7 +1,6 @@
-import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SearchBar from './SearchBar';
+import SearchBar from '../Components/SearchBar';
 
 // Mock the onSearch prop function
 const mockOnSearch = jest.fn();

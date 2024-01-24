@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Post } from "./PostDetails";
 import { Link as RouterLink } from "react-router-dom";
 import { Typography, Paper, Link } from "@mui/material";
@@ -22,13 +22,10 @@ class PostList extends Component<PostListProps, PostListState> {
     };
   }
 
-
-
   render() {
     const { posts, onSelectPost } = this.props;
-
     return (
-      <div      >
+      <div>
         <ul style={{ padding: 0, listStyleType: "none" }}>
           {posts.map((post) => (
             <Link
@@ -44,12 +41,22 @@ class PostList extends Component<PostListProps, PostListState> {
                   margin: "20px",
                   padding: "10px",
                   backgroundColor: "#f2f2f2",
-                }} // Set background color
+                }} // Set background color to light gray
               >
                 <Typography variant="h6">Title: {post.title}</Typography>
-                <Typography variant="body1">URL: {post.url}</Typography>
                 <Typography variant="body1">
-                  Created At: {post.created_at}
+                  URL: <a href={post.url}> {post.url} </a>{" "}
+                </Typography>
+                <Typography variant="body1">
+                  Created At:{" "}
+                  {new Date(post.created_at).toLocaleString("en-GB", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "numeric",
+                    timeZone: "UTC",
+                  })}
                 </Typography>
                 <Typography variant="body1">
                   Tags: {post._tags.join(", ")}
