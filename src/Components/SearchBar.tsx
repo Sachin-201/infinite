@@ -1,4 +1,5 @@
 import  { Component } from "react";
+import React from 'react';
 import { TextField, Button, Grid } from "@mui/material";
 
 interface SearchBarProps {

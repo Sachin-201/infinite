@@ -1,17 +1,20 @@
 module.exports = {
     // ... other Jest configurations
+      testEnvironment: "jsdom",
+
     transform: {
       '^.+\\.tsx?$': 'babel-jest',
     },
   },
-  
 
-  {
-    // ... other package.json configurations
-    "jest": {
-      "testMatch": [
-        "<rootDir>/src/__tests__/*.test.tsx"
-      ]
-    },
+
+{
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "<rootDir>/src/__tests__/*.test.tsx"
+    ]
+    // ... other Jest configurations
   }
+}
   

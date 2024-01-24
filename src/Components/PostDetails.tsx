@@ -1,4 +1,6 @@
 import { Component } from "react";
+import React from 'react';
+
 import { Typography, Paper, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -59,7 +61,7 @@ export default PostDetails;
 
 // git init
 // git add .
-// git commit -m "first commit"
+// git commit -m "Start Testing"
 // git branch -M main
 // git remote add origin https://github.com/Sachin-201/infinitescroll.git
 // git push -u origin main

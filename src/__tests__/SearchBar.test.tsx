@@ -1,5 +1,5 @@
+import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import SearchBar from '../Components/SearchBar';
 
 // Mock the onSearch prop function
@@ -14,8 +14,8 @@ test('SearchBar component renders correctly', () => {
   render(<SearchBar {...defaultProps} />);
 
   // Check if the SearchBar renders correctly
-  expect(screen.getByLabelText('Search')).toBeInTheDocument();
-  expect(screen.getByRole('button', { name: 'Search' })).toBeInTheDocument();
+  expect(screen.getByLabelText('Search')).toBeTruthy();
+  expect(screen.getByRole('button', { name: 'Search' })).toBeTruthy();
 });
 
 test('SearchBar handles input change and search button click', () => {
@@ -26,7 +26,7 @@ test('SearchBar handles input change and search button click', () => {
   fireEvent.change(searchInput, { target: { value: 'test' } });
 
   // Check if the input value is updated
-  expect(searchInput).toHaveValue('test');
+  expect(searchInput.value).toBe('test');
 
   // Simulate user clicking the search button
   const searchButton = screen.getByRole('button', { name: 'Search' });
@@ -35,6 +35,3 @@ test('SearchBar handles input change and search button click', () => {
   // Check if the onSearch prop is called with the correct value
   expect(mockOnSearch).toHaveBeenCalledWith('test');
 });
-
-// Add more test cases as needed
-

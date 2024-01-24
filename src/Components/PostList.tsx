@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Post } from "./PostDetails";
+import React from 'react';
 import { Link as RouterLink } from "react-router-dom";
 import { Typography, Paper, Link } from "@mui/material";
 
