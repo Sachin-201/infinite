@@ -11,10 +11,12 @@ module.exports = {
 {
   "jest": {
     "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
     "testMatch": [
       "<rootDir>/src/__tests__/*.test.tsx"
     ]
     // ... other Jest configurations
   }
 }
+
   

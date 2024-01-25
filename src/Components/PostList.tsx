@@ -1,6 +1,6 @@
+import React from "react";
 import { Component } from "react";
 import { Post } from "./PostDetails";
-import React from 'react';
 import { Link as RouterLink } from "react-router-dom";
 import { Typography, Paper, Link } from "@mui/material";
 
@@ -29,12 +29,21 @@ class PostList extends Component<PostListProps, PostListState> {
       <div>
         <ul style={{ padding: 0, listStyleType: "none" }}>
           {posts.map((post) => (
+            // <Link
+            //   key={post.objectID}
+            //   component={RouterLink}
+            //   to="/post"
+            //   onClick={() => onSelectPost(post)}
+            //   style={{ textDecoration: "none" }}
+            // >
+
             <Link
               key={post.objectID}
               component={RouterLink}
               to="/post"
               onClick={() => onSelectPost(post)}
               style={{ textDecoration: "none" }}
+              data-testid={`post-${post.objectID}`}
             >
               <Paper
                 elevation={3}

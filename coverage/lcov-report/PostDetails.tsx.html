@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for SearchBar.tsx</title>
+    <title>Code coverage report for PostDetails.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> SearchBar.tsx</h1>
+        <h1><a href="index.html">All files</a> PostDetails.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/10</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
-                <span class="quiet">Functions</span>
                 <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -122,7 +122,20 @@
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,26 +150,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -181,65 +181,86 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import  { Component } from "react";
-import React from 'react';
-import { TextField, Button, Grid } from "@mui/material";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import { Component } from "react";
+import { Typography, Paper, Button } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 &nbsp;
-interface SearchBarProps {
-  onSearch: (searchTerm: string) =&gt; void;
+export interface Post {
+  objectID: string;
+  title: string;
+  author: string;
+  url: string;
+  created_at: string;
+  _tags: string[];
 }
 &nbsp;
-interface SearchBarState {
-  searchTerm: string;
+interface PostDetailsProps {
+  post: Post | null;
 }
 &nbsp;
-class SearchBar extends Component&lt;SearchBarProps, SearchBarState&gt; {
-  constructor(props: SearchBarProps) {
-    super(props);
-&nbsp;
-    this.state = {
-      searchTerm: "",
-    };
-  }
-&nbsp;
-  handleChange = (e: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; {
-    const searchTerm = e.currentTarget.value.trim();
-    this.setState({ searchTerm });
-  };
-&nbsp;
-  handleSearch = () =&gt; {
-    const { searchTerm } = this.state;
-    this.props.onSearch(searchTerm);
-  };
-&nbsp;
+class PostDetails extends Component&lt;PostDetailsProps&gt; {
   render() {
-    const { searchTerm } = this.state;
+    const { post } = this.props;
+    if (!post) {
+      return &lt;Typography variant="h6"&gt;No post selected.&lt;/Typography&gt;;
+    }
 &nbsp;
     return (
-      &lt;Grid container spacing={2} alignItems="center"&gt;
-        &lt;Grid item&gt;
-          &lt;TextField
-            label="Search"
-            variant="outlined"
-            value={searchTerm}
-            onChange={this.handleChange}
-          /&gt;
-        &lt;/Grid&gt;
-        &lt;Grid item&gt;
-          &lt;Button
-            variant="contained"
-            color="primary"
-            onClick={this.handleSearch}
-          &gt;
-            Search
-          &lt;/Button&gt;
-        &lt;/Grid&gt;
-      &lt;/Grid&gt;
+      &lt;Paper elevation={3} style={{ padding: 16, margin: 16 }}&gt;
+        &lt;Typography variant="h6"&gt;Title: {post.title}&lt;/Typography&gt;
+        &lt;Typography variant="body1"&gt;
+          URL: &lt;a href={post.url}&gt; {post.url} &lt;/a&gt;
+        &lt;/Typography&gt;
+        &lt;Typography variant="body1"&gt;
+          Created At:{" "}
+          {new Date(post.created_at).toLocaleString("en-GB", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+            hour: "numeric",
+            minute: "numeric",
+            timeZone: "UTC",
+          })}
+        &lt;/Typography&gt;{" "}
+        &lt;Typography variant="body1"&gt;Tags: {post._tags.join(", ")}&lt;/Typography&gt;
+        &lt;Typography variant="body1"&gt;Author: {post.author}&lt;/Typography&gt;
+        &lt;Button
+          variant="contained"
+          color="primary"
+          component={RouterLink}
+          to="/"
+          style={{ marginTop: 16 }}
+        &gt;
+          Back to Home
+        &lt;/Button&gt;
+      &lt;/Paper&gt;
     );
   }
 }
 &nbsp;
-export default SearchBar;
+export default PostDetails;
+&nbsp;
+// git init
+// git add .
+// git commit -m "Start Testing"
+// git branch -M main
+// git remote add origin https://github.com/Sachin-201/infinitescroll.git
+// git push -u origin main
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

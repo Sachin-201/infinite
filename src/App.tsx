@@ -1,3 +1,4 @@
+import React from 'react';
 import { Component } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -52,7 +53,6 @@ class App extends Component<{}, AppState> {
     }
   };
 
-
   fetchPosts = async () => {
     const { page, posts, loading } = this.state;
     if (page > 0 && page > this.state.nbPages) {
@@ -105,8 +105,8 @@ class App extends Component<{}, AppState> {
     const { filteredPosts, selectedPost, loading } = this.state;
     return (
       <Router>
-        <div >
-          <SearchBar onSearch={this.handleSearch} />
+        <div>
+          <SearchBar onSearch={this.handleSearch}  />
           {loading && <CircularProgress style={{ marginTop: "20px" }} />}
           <Paper elevation={3} style={{ padding: "20px", marginTop: "20px" }}>
             <Routes>

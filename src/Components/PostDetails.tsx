@@ -1,6 +1,5 @@
-import { Component } from "react";
 import React from 'react';
-
+import { Component } from "react";
 import { Typography, Paper, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
